@@ -1,0 +1,329 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:black;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 80%;
+    background-image: linear-gradient(to left bottom, #7f7f7f, #606060, #434343, #282828, #0e0e0e);
+}
+
+header{
+    font-size: 1rem;
+    background-color: grey;
+    text-align: center;
+    padding: 5px;
+}
+
+.mainImage{
+    border-color: black;
+    border-style: solid;
+}
+
+nav ul{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+nav ul li{
+    margin: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 0.8rem;
+    border-color: black;
+    list-style: none;
+    border-style: solid;
+    border-width: 0.1rem;
+    background-image: linear-gradient(to right top, #c6cdd8, #a7b5bb, #8d9d9c, #79847e, #686b62);
+}
+
+nav ul li:hover{
+    border-color: white;
+    transform: scale(1.2);
+    transition-duration: 1.5s;
+}
+
+nav{
+    background-color: #aeaeae;
+}
+
+.mainIndex{
+    display: grid;
+    grid-template-areas: "subtitle subtitle subtitle"
+                         "imgNyc imgNyc imgNyc";
+}
+
+.subtitle{
+    grid-area: subtitle;
+    font-size: 1.2rem;
+}
+
+.imgNyc{
+    grid-area: imgNyc;
+}
+
+.mainPortfolios{
+    display: grid;
+    grid-template-areas: "portfolios portfolios"
+                         "nuestrosTrabajos nuestrosTrabajos"
+                         "portfoliosSubtituloA portfoliosSubtituloB"
+                         "imgVizzentino imgModelo"
+;
+}
+
+.portfolios{
+    grid-area: portfolios;
+}
+
+.nuestrosTrabajos{
+    grid-area: nuestrosTrabajos;
+}
+
+.imgVizzentino{
+    grid-area: imgVizzentino;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.imgModelo{
+    grid-area: imgModelo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+
+.portfoliosSubtituloA{
+    grid-area: portfoliosSubtituloA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.portfoliosSubtituloB{
+    grid-area: portfoliosSubtituloB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.mainPrintshop{
+    display: grid;
+    grid-template-areas: "h2Ps h2Ps h2Ps h2Ps h2Ps"
+                         "h3Ps h3Ps h3Ps h3Ps h3Ps"
+                         "imgLluvia imgLluvia imgManhattan imgLuna imgLuna"
+                         "imgCopa imgCopa imgNino imgVinos imgVinos";
+
+}
+
+.h2Ps{
+    grid-area: h2Ps;
+}
+
+.h3Ps{
+    grid-area: h3Ps;
+}
+
+.imgLluvia{
+    grid-area: imgLluvia;
+    padding: 1rem;
+}
+.imgManhattan{
+    grid-area: imgManhattan;
+    padding: 1rem;
+}
+
+.imgLuna{
+    grid-area: imgLuna;
+    padding: 1rem;
+}
+
+.imgCopa{
+    grid-area: imgCopa;
+    padding: 1rem;
+}
+
+.imgNino{
+    grid-area: imgNino;
+    padding: 1rem
+}
+
+.imgVinos{
+    grid-area: imgVinos;
+    padding: 1rem
+}
+
+.formulario{
+    text-align: left;
+    padding: 1rem;
+    height: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+main{
+    background-position: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main h2{
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    background-color: #808080;
+    text-align: center;
+
+}
+
+main h3{
+    padding: 0.4rem;
+    font-size: 1rem;
+    background-color: #aeaeae;
+    text-align: center;
+}
+
+footer{
+    font-size: 1rem;
+    background-color: #888888;
+    text-align: center;
+    padding: 0.3rem;
+    border: 0.2rem;
+    border-color: black;
+    border-style: dashed;
+}
+
+body main{
+    width: 100%;
+}
+
+body main p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+body main form fieldset div{
+    margin: 0.8rem;
+}
+
+.iconito:hover{
+            transform: scale(1.2);
+            transition-duration: 1.5s;      
+}
+
+
+@media only screen and (max-width: 500px){
+    .mainPortfolios{
+        background-color: #686b62;
+        display: grid;
+        grid-template-areas: "portfolios"
+                             "nuestrosTrabajos"
+                             "portfoliosSubtituloA"
+                             "imgVizzentino"
+                             "portfoliosSubtituloB"
+                             "imgModelo";
+        justify-content: center;
+    }
+    
+    .portfoliosSubtituloA{
+        grid-area: portfoliosSubtituloA;
+    }
+
+    .portfoliosSubtituloB{
+        grid-area: portfoliosSubtituloB;
+    }
+    
+    .nuestrosTrabajos{
+        grid-area: nuestrosTrabajos;
+    }
+    
+    .imgVizzentino{
+        grid-area: imgVizzentino;
+    }
+    
+    .imgModelo{
+        grid-area: imgModelo;
+    }
+
+    .mainPrintshop{
+        display: grid;
+        grid-template-areas: "h2Ps h2Ps"
+                             "h3Ps h3Ps"
+                             "imgLluvia imgManhattan"
+                             "imgLuna imgCopa"
+                             "imgNino imgVinos"   
+    }
+    
+    .h2Ps{
+        grid-area: h2Ps;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .h3Ps{
+        grid-area: h3Ps;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgLluvia{
+        grid-area: imgLluvia;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgManhattan{
+        grid-area: imgManhattan;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgLuna{
+        grid-area: imgLuna;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgCopa{
+        grid-area: imgCopa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgNino{
+        grid-area: imgNino;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imgVinos{
+        grid-area: imgVinos;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
